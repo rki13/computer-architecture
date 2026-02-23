@@ -5,3 +5,7 @@ endmodule
 module oneBitNand(input a, input b, output out);
 	assign out = ~(a & b);
 endmodule
+
+module oneBitNor(input a, input b, output out);
+	assign out = ~(a | b);
+endmodule
