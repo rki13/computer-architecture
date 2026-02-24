@@ -1,11 +1,39 @@
 \documentclass[11pt]{article}
     \title{\textbf{Computer Architecture}}
     
-    \author{Group ``Orange": Chloe, Nathaniel, Rex}
+    \author{Group ``Orange": Chloe MacGregor, Nathaniel Jefferson, Rex}
     \date{February 23rd, 2026}
 
     \addtolength{\topmargin}{-3cm}
     \addtolength{\textheight}{3cm}
+
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
 \begin{document}
 
 \maketitle
@@ -17,10 +45,38 @@ The goal of this project is to serve as effective practice for the authors in mo
 \section{One-bit Arithmetic}
 Computers understand mathematics in terms of finite binary digits (bits), so building arithmetic circuits requires starting with single bit arithmetic.\\
 \\
-We designed the following circuits using 
+We designed the following circuits using Verilog:
 \subsection{Verilog Code}
+\lstinputlisting[breaklines]{code.v}
+
+\pagebreak
 \subsection{Circuit Unit Tests}
-\subsection{Simulation Waveforms}
+We separated each unit tests into its own testbench files that correspond each to their own code module. Below is the test for the not circuit:
+\lstinputlisting[breaklines]{test_not.v}
+   
+and the corresponding output waveforms\\
+\includegraphics{not_waveform}
+
+\pagebreak
+and for the nand circuit:
+\lstinputlisting[breaklines]{test_nand.v}
+   
+and the corresponding output waveforms\\
+\includegraphics{nand_waveform}
+
+\pagebreak
+and for the nor circuit:
+\lstinputlisting[breaklines]{test_nor.v}
+   
+and the corresponding output waveforms\\
+\includegraphics{nor_waveform}
+
+\pagebreak
+and for the shift circuit:
+\lstinputlisting[breaklines]{test_shift.v}
+\pagebreak
+and the corresponding output waveforms\\
+\includegraphics{shift_waveform}
 
 
 \end{document}
