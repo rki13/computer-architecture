@@ -2,9 +2,7 @@ module shifter4_tb();
     reg  [3:0] A, B;
     wire [3:0] X, Y;
     integer errors;
-
     shifter4 DUT (.A(A), .B(B), .X(X), .Y(Y));
-
     task check;
         input [3:0] expectedX;
         input [3:0] expectedY;
