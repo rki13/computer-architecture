@@ -1,0 +1,70 @@
+$date
+	Mon Mar 30 19:33:19 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module adder4_tb $end
+$var wire 4 ! X [3:0] $end
+$var wire 1 " Cout $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var reg 1 % Cin $end
+$var integer 32 & errors [31:0] $end
+$scope module DUT $end
+$var wire 4 ' A [3:0] $end
+$var wire 4 ( B [3:0] $end
+$var wire 1 % Cin $end
+$var wire 5 ) sum [4:0] $end
+$var wire 4 * X [3:0] $end
+$var wire 1 " Cout $end
+$upscope $end
+$scope task check $end
+$var reg 1 + expectedCout $end
+$var reg 4 , expectedX [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1000 ,
+0+
+b1000 *
+b1000 )
+b101 (
+b11 '
+b0 &
+0%
+b101 $
+b11 #
+0"
+b1000 !
+$end
+#1
+b0 !
+b0 *
+1"
+1+
+b0 ,
+b1 $
+b1 (
+b10000 )
+b1111 #
+b1111 '
+#2
+b1001 !
+b1001 *
+0"
+0+
+b1001 ,
+1%
+b1001 )
+b111 #
+b111 '
+#8

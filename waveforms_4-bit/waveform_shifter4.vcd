@@ -1,0 +1,86 @@
+$date
+	Mon Mar 30 19:33:19 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module shifter4_tb $end
+$var wire 4 ! Y [3:0] $end
+$var wire 4 " X [3:0] $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var integer 32 % errors [31:0] $end
+$scope module DUT $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var reg 4 ( X [3:0] $end
+$var reg 4 ) Y [3:0] $end
+$upscope $end
+$scope task check $end
+$var reg 4 * expectedX [3:0] $end
+$var reg 4 + expectedY [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b101 +
+b1000 *
+b101 )
+b1000 (
+b110 '
+b1011 &
+b0 %
+b110 $
+b1011 #
+b1000 "
+b101 !
+$end
+#1
+b100 !
+b100 )
+b1101 "
+b1101 (
+b100 +
+b1101 *
+b1101 $
+b1101 '
+b101 #
+b101 &
+#2
+b0 !
+b0 )
+b1010 "
+b1010 (
+b0 +
+b1010 *
+b0 $
+b0 '
+b1010 #
+b1010 &
+#3
+b111 "
+b111 (
+b111 *
+b11 $
+b11 '
+b11 #
+b11 &
+#4
+b1000 !
+b1000 )
+b100 "
+b100 (
+b1000 +
+b100 *
+b1010 $
+b1010 '
+b1001 #
+b1001 &
+#10

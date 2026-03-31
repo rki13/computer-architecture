@@ -1,0 +1,71 @@
+$date
+	Mon Mar 30 19:33:19 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module multiplier4_tb $end
+$var wire 4 ! Y [3:0] $end
+$var wire 4 " X [3:0] $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var integer 32 % errors [31:0] $end
+$scope module DUT $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 8 ( product [7:0] $end
+$var wire 4 ) Y [3:0] $end
+$var wire 4 * X [3:0] $end
+$upscope $end
+$scope task check $end
+$var reg 4 + expectedX [3:0] $end
+$var reg 4 , expectedY [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ,
+b1111 +
+b1111 *
+b0 )
+b1111 (
+b101 '
+b11 &
+b0 %
+b101 $
+b11 #
+b1111 "
+b0 !
+$end
+#1
+b1110 "
+b1110 *
+b1 !
+b1 )
+b1 ,
+b1110 +
+b11 $
+b11 '
+b11110 (
+b1010 #
+b1010 &
+#2
+b1 "
+b1 *
+b1110 !
+b1110 )
+b1110 ,
+b1 +
+b1111 $
+b1111 '
+b11100001 (
+b1111 #
+b1111 &
+#8
