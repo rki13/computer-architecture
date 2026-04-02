@@ -1,0 +1,55 @@
+$date
+	Mon Mar 30 19:33:19 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module nand4_tb $end
+$var wire 4 ! X [3:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 4 # B [3:0] $end
+$var integer 32 $ errors [31:0] $end
+$scope module DUT $end
+$var wire 4 % A [3:0] $end
+$var wire 4 & B [3:0] $end
+$var wire 4 ' X [3:0] $end
+$upscope $end
+$scope task check $end
+$var reg 4 ( expectedX [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b111 (
+b111 '
+b1100 &
+b1010 %
+b0 $
+b1100 #
+b1010 "
+b111 !
+$end
+#1
+b0 !
+b0 '
+b0 (
+b1111 #
+b1111 &
+b1111 "
+b1111 %
+#2
+b1111 !
+b1111 '
+b1111 (
+b1010 #
+b1010 &
+b0 "
+b0 %
+#8
