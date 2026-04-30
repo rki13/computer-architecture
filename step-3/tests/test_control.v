@@ -34,7 +34,7 @@ module control_tb();
         end
     endtask
 
-    // Lower 5-bit check (ADD, SUB — result in [3:0], carry/borrow in [4])
+    // Lower 5-bit check (ADD, SUB - result in [3:0], carry/borrow in [4])
     task check5;
         input [4:0] expected;
         begin
@@ -64,7 +64,6 @@ module control_tb();
 
     initial begin
         errors = 0;
-
         // --- ADD (4'b0000): out[3:0]=sum, out[4]=Cout ---
         opcode = 4'b0000; A = 4'b0011; B = 4'b0101; check5(5'b01000); // 3+5=8
         opcode = 4'b0000; A = 4'b1111; B = 4'b0001; check5(5'b10000); // 15+1=16, carry out
@@ -118,7 +117,6 @@ module control_tb();
             $display("All control tests passed.");
         else
             $fatal(1, "%0d control test(s) failed.", errors);
-
         #5 $finish;
     end
 
